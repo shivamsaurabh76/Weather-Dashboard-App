@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <!-- Linking to Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+     
+    <!--Creates a fixed-width container to wrap the content-->
+    <!--Adds margin at the top to provide 5 spacing-->
+    <div class="container mt-5">
+        <!--Creates a horizontal grouping of columns-->
+        <!--Aligns the content horizontally at the center-->
+        <div class="row justify-content-center">
+            <!-- specifies an 8-column width on medium-sized screens-->
+            <div class="col-md-8">
+                <!-- Heading for the Weather Dashboard -->
+                <!-- centers the heading text horizontally-->
+                <!--add bottom margin for 8 spacing below the heading-->
+                <h1 class="text-center mb-4">Weather Dashboard</h1>
+                <!-- Input field for city -->
+                <!--Adds margin at the bottom for spacing-->
+                <div class="mb-3">
+                    <!--Styles the label for form elements-->
+                    <label for="cityInput" class="form-label">Enter city name:</label>
+                    <!-- Applies styling to form input elements-->
+                    <input type="text" id="cityInput" class="form-control" placeholder="E.g., New York">
+                </div>
+                <!-- Button to trigger weather data fetch -->
+                <!--Styles the button as a primary button with Bootstrap's primary color(blue)-->
+                <button id="searchBtn" class="btn btn-primary">Search</button>
+                <!-- Current weather display area -->
+                <!--Creates a card container for content with margin top 4 spacing-->
+                <div id="currentWeather" class="card mt-4">
+                    <!--Adds padding and styles for the card body-->
+                    <div class="card-body">
+                        <!-- Heading for the current weather section -->
+                        <!--Styles the card title-->
+                        <h5 class="card-title">Current Weather</h5>
+                        <!-- Display current weather information here -->
+                    </div>
+                </div>
+                <!-- 5-day forecast area -->
+                <!--class adds top margin for spacing-->
+                <div id="forecast" class="mt-4">
+                    <!-- Heading for the 5-Day Forecast section -->
+                    <!--margin bottom with 3 spacing-->
+                    <h5 class="mb-3">5-Day Forecast</h5>
+                    <!-- Container for forecast cards -->
+                    <!--Groups cards together for a uniform layout-->
+                    <div class="card-deck">
+                        <!-- Forecast cards will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking to the JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
+
+
