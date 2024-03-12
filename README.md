@@ -22,7 +22,7 @@ No additional dependencies are required. The project uses Bootstrap via CDN.
 Open the Application:
 Open the index.html file in your web browser.
 
-Usage
+**Usage**
 Enter City Name:
 
 Type the name of the city you want to check the weather for in the input field.
@@ -33,7 +33,7 @@ View Weather Information:
 
 Current Weather: The top section of the page displays the current temperature, humidity, wind speed, and an icon representing the weather conditions.
 5-Day Forecast: Below the current weather, a card group displays the 5-day forecast, including temperature and weather icons for each day.
-Obtaining an API Key
+**Obtaining an API Key**
 To use this Weather Dashboard, you need an API key from OpenWeatherMap.
 
 Sign Up on OpenWeatherMap:
@@ -48,7 +48,7 @@ Replace the Placeholder:
 Open the app.js file.
 Find the line with const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';.
 Replace 'YOUR_OPENWEATHERMAP_API_KEY' with your actual API key.
-Project Structure
+**Project Structure**
 index.html: HTML file containing the structure of the dashboard.
 app.js: JavaScript file with interactivity and API calls.
 README.md: Documentation file.
