@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const date = new Date(day.dt * 1000);
 
             // Get the weekday name from the date.
-            const dayOfWeek = date.getUTCDay();
+            const dayOfWeek = date.toDateString();
 
             // Add HTML markup for the forecast card to the forecast element.
             forecast.innerHTML +=`
