@@ -79,7 +79,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to update UI with  5 day forecast data.
     function updateForecastUI (data){
-         
+        // Set the innerHTML of  the 'forecast' element to display the 5-day forecast information.
+        forecast.innerHTML = `<h5 class = "mb-3">5-Day Forecast</h5>`
+
+        // Filter and extract the forecast data for each day at 12:00 PM.
+        const forcastDays = data.list.filter(entry => entry.dt_txt.includes('12:00:00'));
+
+        // Iterate over each forecast day and  create a card for it.
+        forcastDays.forEach(day => {
+            // Convert the timestamp (in seconds) to milliseconds and create a Date object.
+            const date = new Date(day.dt * 1000);
+
+            // Get the weekday name from the date.
+            const dayOfWeek = date.getUTCDay();
+
+            // Add HTML markup for the forecast card to the forecast element.
+            forecast.innerHTML +=`
+               <div class = "card">
+               <div class="card-body">
+               <h6 class="card-subtitle mb-2 text-muted">${dayOfWeek}</h6>
+               <p class = "card-text">${day.main.temp}°C</p>
+               <img src =  "https://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt = "Weather Icon">
+               </div>
+            `;
+        });
     }
 
     // Load the last searhed city from the local storage when the page is loaded.
