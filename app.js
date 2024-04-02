@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Convert the timestamp (in seconds) to milliseconds and create a Date object.
             const date = new Date(day.dt * 1000);
 
-            // Get the weekday name from the date.
-            const dayOfWeek = date.toDateString();
+            // Get the short weekday name from the date.
+            const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'short' });
 
             // Add HTML markup for the forecast card to the forecast element.
             forecast.innerHTML +=`

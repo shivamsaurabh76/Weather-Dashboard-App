@@ -1,0 +1,47 @@
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: 'Arial', sans-serif; /* Set font-family */
+}
+
+.container {
+    max-width: 800px; /* Limit container width for better readability */
+    margin: auto; /* Center container horizontally */
+}
+
+.card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 20px; /* Spacing between cards */
+}
+
+.card-title {
+    font-size: 24px; /* Larger font size for card titles */
+    color: #333; /* Dark text color */
+}
+
+.card-text {
+    font-size: 18px; /* Medium font size for card text */
+    color: #555; /* Slightly darker text color */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary color for buttons (blue) */
+    border: none; /* Remove button border */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width input field */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+input[type="text"]:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #007bff; /* Change border color on focus */
+}
